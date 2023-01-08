@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+   <meta charset="UTF-8">
+   <title>Sayfa başlığı</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+<body>
+   
+   <!-- HEADER -->
+   <div class="container-fluid bg-dark text-light text-center p-2"><img src="pictures/react.png" width="50px" class="mr-4">Lorem Ipsum</div>
+   
+   <header class="sticky-top">
+     <nav class="ccontainer-fluid container-md">
+        
+       <ul id="navbar" class="nav nav-pills nav-fill">
+         <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i></a></li>
+         <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+            <div class="dropdown-menu">
+               <a href="" class="dropdown-item">Lorem</a>
+               <a href="" class="dropdown-item">Lorem Ipsum</a>
+               <a href="" class="dropdown-item">Lorem Ipsum</a>
+               <a href="" class="dropdown-item">Lorem</a>
+            </div>
+         </li>
+         <li class="nav-item"><a href="" class="nav-link active" data-toggle="pill">Apex</a></li>
+         <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Flow</a>
+            <div class="dropdown-menu">
+               <a href="" class="dropdown-item">Lorem</a>
+               <a href="" class="dropdown-item">Lorem Ipsum</a>
+               <a href="" class="dropdown-item">Lorem Ipsum</a>
+               <a href="" class="dropdown-item">Lorem</a>
+            </div>
+         </li>
+         <li class="nav-item"><a href="" class="nav-link" data-toggle="pill">Books</a></li>
+         <li class="nav-item"><a href="" class="nav-link" data-toggle="pill">Salesforce Apex</a></li>
+         <li class="nav-item"><a href="" class="nav-link" data-toggle="pill">Flow</a></li>
+         <li class="nav-item"><a href="" class="nav-link" data-toggle="pill">Books</a></li>
+         <li class="nav-item"><a href="" class="nav-link" data-toggle="pill">Contact</a></li>
+         <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-search"></i></a></li>
+       </ul>
+       
+       <div id="header-md">
+          <a href="index.html" class="float-left" style="line-height:45px"><i class="fas fa-home text-light"></i></a>
+          <i class="fas fa-bars text-light float-right" style="line-height:45px" data-toggle="collapse" data-target="#collapse"></i>
+          <a href="" class="float-right mr-4" style="line-height:45px"><i class="fas fa-search text-light"></i></a>
+       </div>
+              
+         <ul id="collapse" class="list-group collapse">
+            <li class="list-group-item border-0 dropdown">
+               <a href="" class="dropdown-toggle" data-toggle="dropdown">About</a>
+               <div class="dropdown-menu">
+                  <a href="" class="dropdown-item text-dark">Lorem</a>
+                  <a href="" class="dropdown-item text-dark">Lorem Ipsum</a>
+                  <a href="" class="dropdown-item text-dark">Lorem Ipsum</a>
+                  <a href="" class="dropdown-item text-dark">Lorem</a>
+               </div>
+            </li>
+            <li class="list-group-item border-0"><a href="">Salesforce</a></li>
+            <li class="list-group-item border-0"><a href="">Apex</a></li>
+            <li class="list-group-item border-0">
+               <a href="" class="dropdown-toggle" data-toggle="dropdown">Flow</a>
+               <div class="dropdown-menu">
+                  <a href="" class="dropdown-item text-dark">Lorem</a>
+                  <a href="" class="dropdown-item text-dark">Lorem Ipsum</a>
+                  <a href="" class="dropdown-item text-dark">Lorem</a>
+                  <a href="" class="dropdown-item text-dark">Lorem Ipsum</a>
+               </div>
+            </li>
+            <li class="list-group-item border-0"><a href="">Visualforce</a></li>
+            <li class="list-group-item border-0"><a href="">Lighting Web Components</a></li>
+            <li class="list-group-item border-0"><a href="">Flow</a></li>
+         </ul>       
+      
+     </nav>
+   </header>
+      
+   
+   <!-- FLOATİNG -->
+   
+   <div id="floating" class="container-fluid border border-muted border-left-0 px-0 py-sm-1 mt-3 position-relative">
+      <p class="bg-danger text-light font-weight-bold p-2 d-sm-none mb-0">Recent Posts</p>
+      <p class="bg-danger text-light font-weight-bold p-2 position-absolute d-none d-sm-block">Recent Posts</p>
+      <marquee scrollamount="10" class="d-flex align-items-center py-2 py-sm-1">
+         <a href="" class="mx-4 text-dark"><img src="pictures/react.png" width="20px">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a>
+         <a href="" class="mx-4 text-dark"><img src="pictures/react.png" width="20px">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Sed Do Eiusmod</a>
+         <a href="" class="mx-4 text-dark"><img src="pictures/react.png" width="20px">Lorem Ipsum Dolor Sit Amet</a>
+         <a href="" class="mx-4 text-dark"><img src="https://picsum.photos/200" width="20px">Lorem Ipsum Dolor Sit Amet</a>
+         <a href="" class="mx-4 text-dark"><img src="pictures/react.png" width="20px">Lorem Ipsum Dolor Sit Amet</a>
+      </marquee>
+   </div><p id="demo"></p>
+
+   
+   <!-- MAIN -->
+   <main class="container-fluid container-md mt-4">
+     <div class="row">
+      <!-- SECTION LEFT -->
+      <section id="left" class="col-md-8 d-flex flex-column container">
+         
+         <h4 class="text-center">Learning Apex</h4>
+         <p class="text-center text-primary font-weight-bold mb-0 mt-4">Lorem Ipsum</p>
+         <p class="text-center text-danger font-weight-bold mt-0">Lorem ipsum dolor sit amet consectetur adipiscing Apex</p>
+         <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <p class="font-weight-light">Nothing is <code>impossible</code> – the word itself encompasses ‘I’m possible’! So, enjoy the journey with us!</p>
+         <p>Lorem Team</p>
+         
+         <ol>
+            <li><a href="">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+            <li><a href="">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+            <li><a href="">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+            <li><a href="">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+            <li><a href="">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+         </ol>
+         
+         <div class="p-3 my-3" style="background-color: wheat">
+            <p class="font-weight-light">Have feedback, suggestions for posts, or need more information about Salesforce online training offered by me? Say hello, and leave a message!</p>
+            <form action="">
+               
+               <div class="form-group mt-4">
+                  <label for="name"><code>Name</code><small> (required)</small></label>
+                  <input type="text" id="name" name="name" class="form-control w-50 border-dark">
+               </div>
+               <div class="form-group mt-4">
+                  <label for="email"><code>Email</code><small> (required)</small></label>
+                  <input type="text" id="email" name="email" class="form-control w-50 border-dark">
+               </div>
+               <div class="form-group mt-4">
+                  <label for="phone"><code>Phone</code></label>
+                  <input type="text" id="phone" name="phone" class="form-control w-50 border-dark">
+               </div>
+               
+               <div class="form-group mt-4">
+                  <label for="datalist"><code>Course Name</code><small> (required)</small></label>
+                  <input type="text" id="datalist" list="datalists" class="form-control w-25 border-dark" value="Lorem Ipsum">
+                  <datalist id="datalists">
+                     <option value="Lorem Ipsum" selected>
+                     <option value="Lorem Ipsum Dolor">
+                     <option value="Lorem Ipsum">
+                     <option value="Lorem Ipsum II">
+                     <option value="Lorem Ipsum Dolor">
+                     <option value="Lorem Ipsum">
+                  </datalist>
+                </div>
+               
+                <label class="mt-3"><code>Preferred Timing</code><small> (required)</small></label>
+                <div class="checkbox">                  
+                  <label class="font-weight-light"><input type="checkbox"> Morning</label>
+                </div> 
+                <div class="checkbox">  
+                  <label class="font-weight-light"><input type="checkbox"> Evening</label>
+                </div>
+                <div class="checkbox">
+                  <label class="font-weight-light"><input type="checkbox"> Weekdays</label>
+                </div>
+                <div class="checkbox">
+                  <label class="font-weight-light"><input type="checkbox"> Weekend</label>
+               </div>
+               
+               <div class="form-group mt-3">
+                  <label for="comment"><code>Write your questions</code><small> (required)</small></label>
+                  <textarea type="text" id="comment" name="comment" class="form-control border-dark" rows="5"></textarea>
+               </div>               
+               <button class="btn btn-danger mt-3">Submit</button>
+            </form>
+         </div>
+         
+         <div id="form-join" class="bg-danger text-light px-4 pt-4 my-3 rounded position-relative">
+            <h2 class="text-center">Join Us?</h2>
+            <p class="h6 font-weight-normal">Subscribe to my mailing list and get interesting updates in your inbox.</p>
+            <form class="form-group d-flex flex-column align-items-center">
+               <input type="text" class="form-control form-control-lg mt-2 text-center font-weight-light" placeholder="Enter name">
+               <input type="text" class="form-control form-control-lg mt-2 text-center font-weight-light" placeholder="Enter your email">
+               <input type="submit" class="form-control btn btn-dark shadow w-50 mt-2" value="Submit">
+            </form>
+            <p class="text-center"><small class="font-weight-light">We respect your privacy and take protecting it seriously</small></p>
+         </div>
+         
+         <div class="mb-3">
+            <h4 class="border-bottom border-danger py-2">Share</h4>
+            <a href="" class="btn btn-primary"><small><i class="fab fa-twitter"> Twitter</i></small></a>
+            <a href="" class="btn btn-danger"><small><i class="fab fa-youtube"> YouTube</i></small></a>
+            <a href="" class="btn btn-info"><small><i class="fab fa-linkedin"> LinkedIn</i></small></a>
+            <a href="" class="btn btn-success"><small><i class="fab fa-pinterest"> Pinterest</i></small></a>
+         </div>
+         
+          <nav class="my-3">
+             <ul class="pagination justify-content-center">
+                <li id="laquo" class="page-item"><a class="page-link text-dark" href="">&laquo;</a></li>
+                <li class="page-item ml-2"><a class="page-link text-dark" href="#">1</a></li>
+                <li class="page-item ml-2"><a class="page-link text-dark active" href="#">2</a></li>
+                <li class="page-item ml-2"><a class="page-link text-dark" href="#">3</a></li>
+                <li class="page-item ml-2"><a class="page-link text-dark" href="#">...</a></li>
+                <li class="page-item ml-2"><a class="page-link text-dark" href="#">7</a></li>
+                <li id="raquo" class="page-item ml-2"><a class="page-link text-dark" href="#">&raquo;</a></li>
+             </ul>
+          </nav>
+          <hr class="mt-1"/>
+          
+          <div class="d-none d-md-block">
+             <h4 class="text-danger border-bottom border-primary py-3">Comments</h4>
+             <div class="jumbotron bg-light mt-4 border">
+                <img src="pictures/landscape.jpg" width="50px" class="rounded-circle m-2">
+                <h6 class="d-inline">Name Surname</h6>
+                <p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+             </div>
+             <div class="jumbotron bg-light border">
+                <img src="pictures/react.png" width="50px" class="rounded-circle m-2">
+                <h6 class="d-inline">Name Surname</h6>
+                <p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+             </div>
+          </div>
+          
+          <h4 class="border-bottom border-danger py-3">Leave a Reply</h4>          
+          <form id="form-bottom" class="mt-3">
+             <div class="form-group mb-1"><textarea class="form-control" placeholder="Enter your comment here..."></textarea></div>             
+             <div class="px-3 pt-2" style="background-color:lightgray">
+                <p class="d-inline"><small>Fill in your details below or click an icon to log in:</small></p>
+                <nav class="float-right">
+                   <a href=""><i class="fab fa-wordpress h5 text-info"></i></a>
+                   <a href=""><i class="fab fa-twitter h5 ml-1 text-info"></i></a>
+                   <a href=""><i class="fab fa-linkedin h5 ml-1 text-info"></i></a>
+                </nav>
+                <div class="form-group form-row mt-3"> 
+                   <label class="col-1"><a href=""><img src="pictures/landscape.jpg" width="30px"></a></label>
+                   <input type="text" class="form-control h-25 col-10" placeholder="Email (required)">
+                </div>
+                <div class="form-group form-row"> 
+                   <label class="col-1"></label>
+                   <input type="text" class="form-control h-25 col-10" placeholder="Name (required)">
+                </div>
+                <div class="form-group form-row"> 
+                   <label class="col-1"></label>
+                   <input type="text" class="form-control h-25 col-10" placeholder="Website">
+                </div>                
+                <label class="ml-5">
+                   <input type="checkbox" class="ml-2">
+                   <small> Save my name, email, and website in this browser for the next time I comment.</small>
+                </label>
+             </div>
+                
+                <label class="mt-3"><input type="checkbox"><small> Notify me of new comments via email.</small></label>
+                <button class="btn-sm btn-light rounded-pill float-right border-secondary px-2 py-0 mt-3">Post Comment</button>
+                <p style="font-size:15px" class="text-muted mt-2">This site uses Akismet to reduce spam. Learn how your comment data is processed.</p>
+                            
+          </form>                            
+      </section>
+      
+      <div class="col-md-1"></div>
+
+      
+      <!-- SECTION RIGHT -->
+      <section id="right" class="col-md-3 d-flex flex-column my-4 my-md-0 container">
+         <h4 class="border-bottom border-danger py-3">Upcoming Classes</h4>
+         <ul class="rightlist mt-3 pl-0">
+            <li><a href="" class="text-danger">Lorem Ipsum Dolor Sit Amet</a></li>
+            <li><a href="" class="text-danger">Lorem Ipsum Dolor</a></li>
+            <li><a href="" class="text-danger">Lorem Ipsum Dolor</a></li>
+            <li><a href="" class="text-danger">Lorem Ipsum Dolor</a></li>
+            <li><a href="" class="text-danger">Lorem Ipsum Dolor</a></li>
+         </ul>
+         
+         <div id="backer">
+            <h4 class="border-bottom border-danger py-3">Backer</h4>
+            <a href=""><img src="https://picsum.photos/200" class="mt-2 w-100"></a>
+            <h4 class="border-bottom border-danger py-3">Backer</h4>
+            <a href=""><img src="https://picsum.photos/200" class="mt-2 w-100"></a>
+            <h4 class="border-bottom border-danger py-3">Backer</h4>
+            <a href=""><img src="https://picsum.photos/200" class="mt-2 w-100"></a>
+            <h4 class="border-bottom border-danger py-3">Backer</h4>
+            <a href=""><img src="https://picsum.photos/200" class="mt-2 w-100"></a>
+         </div>
+         
+         <div id="mybooks">
+            <h4 class="border-bottom border-danger py-3 mt-4">My Books</h4>
+            <a href=""><img src="https://picsum.photos/200/300" class="mt-2 w-75"></a>
+            <h4 class="border-bottom border-danger py-3">My Books</h4>
+            <a href=""><img src="https://picsum.photos/200/300" class="mt-2 w-75"></a>
+            <h4 class="border-bottom border-danger py-3">My Books</h4>
+            <a href=""><img src="https://picsum.photos/200/300" class="mt-2 w-75"></a>
+        </div> 
+         <h4 class="border-bottom border-danger py-3 mt-4">Recent Posts</h4>
+         <ul class="trilist pl-0 mt-3">
+            <li><a href="" class="text-danger"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-danger"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-danger"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-danger"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-danger"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+         </ul>
+         
+         <h4 class="border-bottom border-danger py-3 mt-4">Lorem Ipsum Dolor Sit Amet Consectetur</h4>
+         <ul class="rightlist mt-3 pl-0">
+            <li><a href="https://automationchampion.com/" class="text-danger">Lorem Ipsum Dolor Sit Amet Consectetur</a></li>
+         </ul>
+         
+         <h4 class="border-bottom border-danger py-3 mt-4">Categories</h4>
+         <div class="dropdown">
+            <button class="dropdown-toggle" data-toggle="dropdown">Salesforce</button>
+            <ul class="dropdown-menu">
+               <li class="list-group-item"><a href="">River</a></li>
+               <li class="list-group-item"><a href="">Apex</a></li>
+               <li class="list-group-item"><a href="">Visualforce</a></li>
+               <li class="list-group-item"><a href="">River</a></li>
+               <li class="list-group-item"><a href="">Apex</a></li>
+               <li class="list-group-item"><a href="">Visualforce</a></li>
+               <li class="list-group-item"><a href="">River</a></li>
+               <li class="list-group-item"><a href="">Apex</a></li>
+               <li class="list-group-item"><a href="">Visualforce</a></li>
+               <li class="list-group-item"><a href="">Lighting Web Components</a></li>
+               <li class="list-group-item"><a href="">Apex</a></li>
+               <li class="list-group-item"><a href="">Visualforce</a></li>
+               <li class="list-group-item"><a href="">River</a></li>
+               <li class="list-group-item"><a href="">Apex</a></li>
+               <li class="list-group-item"><a href="">Visualforce</a></li>
+            </ul>
+         </div>
+         
+         <h4 class="border-bottom border-danger py-3 mt-4">Blog Archives</h4>
+         <div class="dropdown">
+            <button class="dropdown-toggle" data-toggle="dropdown">Select Month</button>
+            <ul class="dropdown-menu">
+               <li class="list-group-item"><a href="">January</a></li>
+               <li class="list-group-item"><a href="">February</a></li>
+               <li class="list-group-item"><a href="">March</a></li>
+               <li class="list-group-item"><a href="">April</a></li>
+               <li class="list-group-item"><a href="">May</a></li>
+               <li class="list-group-item"><a href="">June</a></li>
+               <li class="list-group-item"><a href="">July</a></li>
+               <li class="list-group-item"><a href="">August</a></li>
+               <li class="list-group-item"><a href="">September</a></li>
+               <li class="list-group-item"><a href="">October</a></li>
+               <li class="list-group-item"><a href="">November</a></li>
+               <li class="list-group-item"><a href="">December</a></li>
+            </ul>
+         </div>
+      </section>
+ 
+     </div>
+   </main>
+
+
+   <!-- FOOTER -->   
+   <section class="bg-primary mt-5 mt-md-4 py-5">
+   <div class="container">
+     <div class="row">      
+      
+      <div class="col-md-3">
+         <h4 class="border-bottom border-dark text-light pb-3 pt-0 mt-4">Information</h4>
+         <ul class="trilist pl-0 mt-3">
+            <li><a href="" class="text-light"><span>&#9656;</span>About Us</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor</a></li>
+         </ul>
+      </div>
+      
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+         <h4 class="border-bottom border-dark text-light pb-3 pt-0 mt-4">Recommended Posts</h4>
+         <ul class="trilist pl-0 mt-3">
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+            <li><a href="" class="text-light"><span>&#9656;</span>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing</a></li>
+         </ul>
+      </div>
+      
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+         <h4 class="border-bottom border-dark text-light pb-3 pt-0 mt-4">Connection</h4>
+         <div class="pl-0 mt-3">
+            <a href="" class="px-1 py-3 h4"><i class="fab fa-twitter text-light"></i></a>
+            <a href="" class="px-1 py-3 h4"><i class="fab fa-linkedin text-light"></i></a>
+            <a href="" class="px-1 py-3 h4"><i class="fab fa-youtube text-light"></i></a>
+         </div>
+      </div>
+      
+     </div>
+   </div>
+   </section>
+   
+   <footer class="bg-danger m-0">
+      <div class="container">
+         <p class="text-light p-3 text-center">&copy Copyright 2022</p>
+      </div>    
+   </footer>
+   
+   
+   <!-- MODAL -->
+   <div id="modal" class="container-fluid fixed-top d-none justify-content-center align-items-start w-100 h-100">
+      <div id="modal-content" class="bg-danger text-light px-4 pt-4 rounded position-relative">
+         <span class="position-absolute h2" style="top:0;right:3px">⊠</span>
+         <h2 class="text-center">Join Us?</h2>
+         <p class="h6 font-weight-normal">Subscribe to my mailing list and get interesting updates in your inbox.</p>
+         <form class="form-group d-flex flex-column align-items-center">
+            <input type="text" class="form-control form-control-lg mt-2 text-center font-weight-light" placeholder="Enter name">
+            <input type="text" class="form-control form-control-lg mt-2 text-center font-weight-light" placeholder="Enter your email">
+            <input type="submit" class="form-control btn btn-dark shadow w-50 mt-2" value="Submit">
+         </form>
+         <p class="text-center"><small class="font-weight-light">We respect your privacy and take protecting it seriously</small></p>
+      </div>
+   </div>
+   
+   
+   
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://kit.fontawesome.com/861ee2c036.js" crossorigin="anonymous"></script>
+   <script src="index.js"></script>
+</body>
+</html>

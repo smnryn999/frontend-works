@@ -1,0 +1,44 @@
+html, body {margin: 0; padding: 0;}
+.active {background: brown !important; color: whitesmoke !important;}
+header {background: coral;}
+#navbar li > a {color:whitesmoke; font-size:14px; padding:15px 0; border-radius:0;}
+
+#floating p {top: 0; z-index: 2;}
+marquee a {line-height: 20px; font-size: 13px;}
+marquee img {margin-right: 10px;}
+
+#read {border: 4px solid red; width: 10em;}
+hr {color: lightgrey; margin: 30px;}
+
+#right .rightlist {text-decoration:underline; list-style:none; font-weight:bold; line-height:30px;}
+.trilist {list-style: none; font-size: 14px;}
+.trilist span {font-size: 20px; margin-right: 15px;}
+
+#right .dropdown ul, #right .dropdown ul li {background: slategray;}
+#right .dropdown ul li a {color: whitesmoke;}
+
+#header-md {display: none; height: 50px;}
+#collapse li {background: coral;}
+#collapse li a {color: whitesmoke;}
+
+#modal {background: rgb(0,0,0,0.4);}
+#modal-content {border: 4px dashed white;}
+#modal-content input[type=text]{font-size: 13px;}
+
+@media(max-width:768px){
+   #navbar {display: none;}
+   #header-md {display: block;}
+   #backer img, #mybooks img {width: 275px !important;}  
+}
+@media(max-width:575px){
+   #mybooks img {width: 50% !important;}
+}
+
+/* APEX PAGE */
+
+ol {text-decoration: underline; text-decoration-color: red;}
+#datalist {font-size: 13px; background: lightgray;}
+.checkbox {font-size: 14px;}
+#form-join {border: 4px dashed white;}
+#form-join input[type=text], #form-bottom input[type=text],  #form-bottom textarea {font-size: 13px;}
+
