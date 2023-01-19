@@ -1,0 +1,715 @@
+html {}
+body {margin: 0; padding: 0; background: ;}
+a:hover {cursor: pointer}
+figure a {text-decoration: none; font-style: italic;}
+
+
+.container{
+  width:100%;
+  margin:auto;
+  overflow:hidden;
+}
+.dark {filter: brightness(60%)}
+
+/* HEADER */
+header {
+				width: 100%;
+				height: 50px;
+				background-color: rgb(0,80,0);
+				padding: 12px 0;
+				position: fixed;
+				z-index: 5;
+}
+.header {width: 95%;}
+.logo {
+				width: 12%;
+				float: left;
+				margin-left: 15px;
+				font: 21px verdana;
+				font-weight: 700;
+				line-height: 47px;
+}
+.logo a {
+				text-decoration: none;
+				color: #fafafa;
+}
+header a:hover, header a:focus {opacity: 0.8;}
+.navbar {
+      width: 60%;
+				line-height: 35px;
+				float: left;
+}
+.navbar a, .navbar p {
+				text-decoration: none;
+				color: #fafafa;
+				font-size: 13px;
+				font-weight: 300;
+				padding: 10px;
+				margin: 0;
+				float: left;
+}
+.navbar p {padding-right: 17px;}
+.navbar p span {
+     margin-left: 3px;
+     position: absolute;
+     top: 11px;
+}
+.current {border: 1px solid green;}
+.rotate1 {opacity:0.8;}
+.rotate1 .arrow {transform: rotate(180deg) translateY(-13px)}
+#third {
+				width: 25%;
+				float: right;
+				line-height : 50px;
+}
+#third button {
+				padding: 5px 35px;
+				line-height: px;
+				background: rgb(0,80,0);
+				color: #fafafa;
+				font-size: 14px;
+				font-weight: 300;
+				border: 1px solid #fafafa;
+				border-radius: 3px;
+}
+.darkmode {color:#fafafa; width:24%; text-align:right; padding: 10px;}
+#darkmode2 {display:none; float:right; color:#fafafa; padding: 10px; margin-right:30px; line-height:10px;}
+#third .table {
+				float: right;
+				color: #fafafa;
+				font-size: 21px;
+				width:15%;
+}
+.table i {transition: 0.5s}
+.rotate i {transform: rotate(80deg)}
+.rotate span {transform: rotate(180deg) translateY(-20px)}
+.table span {
+     margin-left: 5px;
+     position: absolute;
+     top: -1px;
+}
+.icon-bars {
+				width: 6%;
+				line-height: 27px;
+				float: right;
+				display: none;
+}
+.bar1, .bar2, .bar3 {
+				background-color: #fafafa;
+				width: 25px;
+				height: 1px;
+				margin: 6px 0;
+				transition: 0.7s;
+}
+.aktif .bar1 {
+				transform: rotate(225deg) translate(-10px,-3.6px); /* 3.5 */
+}
+.aktif .bar2 {
+				opacity: 0;
+}
+.aktif .bar3 {
+				transform: rotate(135deg) translate(-6.2px, 0);/* 6.5 0 */
+}
+/* .aktif {transform: translateX(-2px);} */
+
+.uparrow {
+      font-size: 15px;
+      margin-top: 40px;
+      transform: translateX(-35px);
+      color: seagreen;
+      display: none;}
+#uparrow {transform: translateX(-23px);}
+
+/* MENUS */
+.menu {
+				position: fixed;
+				top: 50px;
+      left: 0;
+				z-index: 1;
+				width: 100%;		
+				background: seagreen;
+				padding: 20px 10px 10px 15px;
+				display: none;
+}
+#fallMenu {height: 380px;}
+.menu ul {
+				float: left;
+				width: 25%;
+				height: auto;
+				list-style: none;
+				margin-left: 20px;
+				margin-top: 3em;
+}
+.menu ul li {
+				padding: 17px;
+				color: #fafafa;
+				font-size: 13px;
+				font-weight: 400;
+				text-indent: -3px;
+}
+.menu ul li a {
+				text-decoration: none;
+				color: #fafafa;}
+.menu ul .menuHeading {
+      margin-bottom: 26px;
+      padding-bottom: 2px;
+				font-size: 18px;
+				font-weight: 600;
+				text-indent: -16.5px;
+				border-bottom: 1px solid blue;
+}
+
+#blueMenu {height: 480px;}
+.menu a:hover, .menu a:focus {color: blue;}
+
+#rightMenu {
+				position: fixed;
+				top: 55px;
+				right: 0;
+				z-index: 3;
+				width: 0;
+				height: 100%;
+				overflow-X: hidden;
+				opacity: 0;
+				background: seagreen;
+				margin-left: 0;
+				padding: 20px 0;
+				list-style: none;
+				display: block;
+				transition:0.4s;
+}
+.right #rightMenu {
+				width: 23%;
+				opacity: 1;
+}
+#rightMenu li {
+				padding: 15px 20px;		
+				font-size: 14px;
+				font-weight: 400;
+				border-bottom: 1px solid #fafafa;
+}
+#rightMenu li a {
+				text-decoration: none;
+				color: #fafafa;
+}
+
+/* MEDIUM MENUS */
+#menu {
+     position: fixed;
+     top: 35px;
+     left: 0;
+     z-index: 1;
+				width: 100%;
+				height: 100%;
+				background: seagreen;
+				font-weight: 300;
+				padding-top: 3.9em;
+				display: none;
+}
+#p1 {
+				margin: 0;
+				font-size: 24px;
+				position: absolute;
+				top: 40px;
+				left: 15px;
+}
+#medMenu {
+				list-style: none;
+				border-bottom: 1px solid #fafafa;
+				margin: 0 20px;
+				padding-bottom: 3.5em;
+				display: block;
+}
+#medMenu li{
+				padding: 10px 0;
+				font-size: 24px;
+				color: #fafafa;
+}
+#medMenu li a, #menu p {
+				text-decoration: none;
+				color: #fafafa;
+				display: block;
+}
+#medMenu li p {margin: 0;}
+#altMenu {
+				margin: 20px;
+				padding: 20px;
+				font-size: 20px;
+}
+#altMenu button {
+				color: #fafafa;
+				background: seagreen;
+				border: 1px solid #fafafa;
+				border-radius: 3px;
+				font-size: 20px;
+				font-weight: 300;
+				padding: 3px 40px;			
+}
+#menu a:hover, #menu a:focus, #menu p:hover, #menu p:focus {opacity: 0.8}
+
+.rMenu {
+				position: fixed;
+				top: 50px;
+      right: 0;
+      z-index: 2;
+   		width: 0;  		
+				height: 55%;
+				background: seagreen;
+				padding: 0 10px 10px 0;
+				margin-top: 60px;
+				overflow-X: hidden;
+				display: none;
+}
+.rMenu ul {
+     margin: 9px 45px 5px;
+     margin-right: 25px;
+				height: auto;
+				list-style: none;
+				padding: 10px 0 19.5px 0;
+				border-bottom: 1px solid #fafafa;
+}
+.rMenu ul:first-child {margin-top: 0;}
+.rMenu ul li {
+				padding: 8px 0;
+				color: #fafafa;
+				font-size: 13px;
+				font-weight: 400;
+}
+.rMenu ul li a {
+				text-decoration: none;
+				color: #fafafa;}
+.rMenu ul .rMenuHead {
+     margin-bottom: 5px;
+     padding-bottom: 2px;
+			 font-size: 16px;
+			 font-weight: 600;
+}
+.rMenu ul:first-child li:first-child {
+     border-top: 1px solid #fafafa;
+     padding-top: 22px;}
+#moreMenu ul li {
+				font-size: 17px;
+			 font-weight: 400;
+}
+.rMenu ul:first-child {margin-top: 8px;}
+.rMenu a:hover, .rMenu a:focus {color: blue;}
+
+/* SECTION */
+section { 
+				background-blend-mode: lighten;
+				position: relative;
+				padding-top: 100px;
+				font-size: 20px;
+				text-align: center;
+}
+#main {background: url("../pictures/water.jpg") top center no-repeat; background-attachment: fixed;}
+
+#fixed {
+				width: 40%;
+				margin: auto;
+				color: darkblue;
+				position: relative;
+}
+#fixed h1 {
+     font-size: 40px;
+     font-weight: 400;
+     border-bottom: 2.5px solid rebeccapurple;
+     padding: 5px;}
+#fixed .p1 {
+			 font-size: 1.1em;
+     font-weight: 300;
+     line-height: 1.5em;
+     margin: 0 auto;
+}
+#fixed h2 {
+     font-size: 35px;
+     font-weight: 400;
+     padding: 5px;
+     margin: 0 0 22px 0;}
+#fixed .p2 {
+			 font-size: 12px;
+			 font-weight: 500; 
+     margin-bottom: 10em;     
+}
+#img1 {width:400px; height:300px; margin:60px auto; display:none; opacity:0.7}
+#fixed button {
+				font-size: 16px;
+				font-weight: 500;
+				background: Lavender;
+				border: 1px solid darkblue;
+				border-radius: 25px;
+				padding: 10px;
+				margin: 6px;
+				width: 42%;
+}
+#fixed .a1 {
+				color: white;
+				background: darkcyan;
+				border: none;
+}
+#img2 {width:150px; height:150px; margin:20px auto; display:none;}
+
+.fixed {
+				height: 34em;	
+				padding: 10px;
+				padding-top: 20px;	
+}
+#fixed2 {
+      color: #fafafa;
+				background: url("../pictures/night2.jpg") center no-repeat;
+				background-size: cover;
+				margin-top: 3.5em;
+}
+#fixed2 h1 {
+		 	 font-size: 40px;
+     font-weight: 500;
+     padding: 10px;
+     margin: 3em 20px 2em;
+}
+#fixed2 .div1 {display:flex; align-items:center; justify-content:space-evenly; flex-wrap:wrap;}
+#fixed2 .col-4 {
+				width: 30%;
+				padding: 0 10px;
+}
+#fixed2 .col-4 h2 {
+				font-size: 35px;
+     font-weight: 500;
+}
+#fixed2 .col-4 p {
+				font-size: 24px;
+     font-weight: 300;
+     line-height: 40px;
+}
+
+#fixed3 {	
+				background: #fafafa;
+			 padding-top: 4em;
+}
+#fixed3 h1 {
+		 	 font-size: 35px;
+     font-weight: 400;
+     padding: 3px;
+}
+#fixed3 .a1 {
+				font-size: 17px;
+				font-weight: 300;
+				color: darkcyan;
+}
+#fixed3 .div1 {display:flex; align-items:center; justify-content:center; height:55%; flex-wrap:wrap;}
+#fixed3 .col-4 {
+				width: 20%;
+				height: 90%;
+				margin: 20px 15px 10px;
+				padding: 10px;
+				border: 1px solid red;
+				border-radius: 3px;
+}
+#fixed3 .div1 button {
+      color: red;
+				border: 1px solid red;
+				border-radius: 1px;
+				font-size: 15px;
+				font-weight: 400;
+				padding: 10px;
+				width: 82%;
+}
+#fixed3 .div1 p {margin-bottom: 3em;}
+#fixed3 .div1 p:last-child {font-size: 14px; margin-top: 40px;}
+#fixed3 .p1 {   
+     font-size: 14px;
+     font-weight: 500;
+     padding: 15px;
+     clear: both;}
+#fixed3 .p1 a {color: darkcyan; font-weight: 300;}
+
+#slider {
+				height: 21em;
+				color: #fafafa;
+				background: FireBrick;
+				padding: 10px;
+}
+#slider h1 {
+		 	 font-size: 35px;
+     font-weight: 300;
+     padding: 3px;}
+#sliderContent {position: relative;}
+#slider span {
+				font-size: 45px;
+				font-weight: 100;
+				padding: 1%;
+				position: absolute;
+				top: 35%;
+			 left: 10%; /* 15 */
+}
+#slider span:last-child {left: 86%;} /* 82.7 */
+#slider img {
+				width: 22%;
+				height: 250px;
+}
+
+.textImg {
+				height: 30em;	
+				padding: 10px;
+				position: relative;
+}
+#fixed4 {background: #fafafa;}
+#leftSide {float: left; left: 10%;}
+.side {		
+      color: rgba(0,0,0,0.8);
+				width: 35%;
+				height: 50%;	
+				position: absolute;
+				top: 22%;
+				text-align: left;					
+}
+.side h1 {
+				text-transform: capitalize;
+				font-weight: 400;
+				margin-bottom: 40px;}
+.side p {
+				font-size: 18px;
+				font-weight: 300;
+				line-height: 25px;
+				margin-bottom: 20px;
+}
+.side input {
+      color: white;
+      background: coral;
+      border: none;
+      border-radius: 2px;
+				padding: 12px;
+				margin: 10px 0;
+				font-size: 16px;
+				font-weight: 400;
+}
+#rightImgdiv {right: 8%;}
+.imgdiv {
+     width: 40%;
+     height: 70%;
+     position: absolute;
+			top: 15%;	 
+}
+.image {
+     width: 24em;
+     height: 20em;
+			margin-top: 15px;
+}
+
+#fixed5 {background: LavenderBlush;}
+#rightSide {right: 10%;}
+#leftImgdiv {float: left; left: 8%;}
+
+/* FOOTER */
+footer {
+				height: 35em;
+				color: #fafafa;
+				background: darkslategray;
+				text-align: left;
+				text-transform: capitalize;
+				padding: 40px 5.4em 10px;
+				display: block;
+				position: relative;
+}
+footer .footerUp {
+     height:  auto;
+     margin-top: 15px;
+     padding-bottom: 5.5em;
+     font-size: 14px;
+     border-bottom: 1px solid gray;
+     position: relative;
+}
+footer dt {font-size: 15px; margin-top: 30px;}
+footer dd {margin-top: 30px;}
+dd span {font-size: 17px; font-weight: 700;}
+.footerUp #accor1, #accor2 {display: none;}
+#icons {
+				position: absolute;
+				right: 5px;
+				bottom: 10px;
+}
+#icons i {padding: 2px; margin-left: 5px; color: #fafafa; border-radius: 1px;}
+#icons i:hover, #icons i:focus {color: black; background-color: #fafafa !important;}
+
+footer .footerMid {
+				height: 55%;
+				border-bottom: 1px solid gray;
+}
+#footerLogo {
+     float: left;
+				width: 16%;			
+				font-size: 12px;
+				line-height: 20px;
+				margin: 25px 15px 0;
+				letter-spacing: 2px;
+}
+#footerLogo p { margin-top: 1px;}
+.footerMid ul {list-style: none; margin-top: 25px;}
+.footerMid .firstli {font-size: 15px; font-weight: bold; margin-bottom: 18px;}
+.footerMid li a {font-size: 14px; text-decoration: none; color: #fafafa;}
+#fulCenter {
+     float: left;
+				width: 25%;
+				margin-left: 8%;
+}
+#fulRight {display:flex; justify-content:space-evenly;}
+.fulRight {
+     float: left;
+     flex:1;
+			 padding: 1%;
+			 padding-top:0;
+}
+.fulRight:first-child {margin-left: 8%}
+
+footer .footerEnd {
+				height: 10%;
+				margin-top: 5px;
+				}
+.footerEnd a {text-decoration: none; font-size: 13px; color: #fafafa;}
+.footerEnd span {font-size: 12px; position: absolute; left: 45%; padding: 6px;}
+
+footer a:hover, footer a:focus {color: blue;}
+
+.footerUp, .footerMid, .footerEnd {display: block;}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width:600px){
+	    #darkmode2 {margin-right:20px}
+	    .icon-bars {margin-right:10px}
+	    .bar1, .bar2, .bar3 {width: 22px}
+				#img1 {width:250px; height:250px}
+				
+				#fixed2 .div1 .col-4 {width: 80%;}
+				#fixed3 .div1 .col-4 {width:60%;}
+				#fixed3 .div1 a {padding: 10px 35px;}
+				
+				#slider img:nth-child(2) {display:none;}
+				#slider #backSlide {left:5%;}
+				#slider #sliderContent img {width:62%;}
+				
+				.side {width:80%; text-align:center; color:black;}
+			 .imgdiv {display:none;}
+			 
+			.footerMid {flex-direction: column;}
+			.footerMid #fulRight {align-items: flex-start;}
+			#fulRight ul:last-child {display: none;}
+			.footerEnd a {display: block;}
+			footer .footerEnd span {position: relative; left: 15%; top: 15px;}
+}
+
+@media only screen and (min-width:600px) and (max-width:700px){
+	   .textImg {height: 35em;}
+	   .imgdiv {margin-top: 20px;}
+}
+
+
+@media only screen and (max-width:850px){
+				
+				header {height: 30px;}
+				.logo {width: 35%; margin-left: 10px; line-height: 30px;}
+				.icon-bars {display: block;}
+				.navbar {display: none;}
+				#third {display: none;}
+				#darkmode2 {display: block;}
+				
+				#main {padding-top: 75px;}
+			 #fixed {width:70%;}
+			 #fixed h1 {font-size:33px; width:90%; margin:25px auto 20px; padding:8px;}
+			 #fixed .p1 {font-size: 1em; line-height: 1.3em; width: 80%;}
+			 #fixed h2 {font-size: 31px; margin: 10px 0; padding: 0;}
+			 #fixed .p2 {font-size:13px;width: 100%; margin-bottom: 0;}
+			 #img1, #img2 {display:block;}
+			 #fixed button {display:block; margin:8px auto; width:64%;}
+			 
+			 .fixed {height: auto;}
+			 	#fixed2 {margin-top:15px; padding-bottom:4em;}
+			 	#fixed2 h1 {margin-bottom:1em;}
+			 	#fixed2 .col-4 {width: 40%;}
+			 	#fixed2 .col-4:last-child {display:none;}	
+			 	#fixed2 .col-4 h2 {margin-bottom:15px;}
+			 	#fixed2 .col-4 p {margin: 10px;}
+			 
+			 #fixed3 {padding: 5em 10px 4em;}
+			 #fixed3 h1 {width: 75%; margin: auto;}
+			 #fixed3 .a1 {width: 70%; margin: auto;display:block;}
+			 #fixed3 .p1 {width: 60%; margin: auto; padding: 20px; display: block;}
+			 #fixed3 .col-4 {width: 35%;}
+			 
+			 #slider {height: 25em;}
+			 #slider img:nth-child(3) {display:none;}
+			 #slider span {left: 8%;}
+			 #slider img {width: 32%;}
+			
+			.side {top: 14%;}
+			.imgdiv {top: 22%;}
+			.image {width: 15em; height: 15em;}
+			#rightSide {top: 10%;}
+			#rightSide input {padding: 12px 20px; margin-bottom: 10px;}
+			#rightSide input:last-child {margin: 0; padding: 12px 18.6px;}
+			 
+			footer {padding: 40px 3em; height: auto;}
+			footer .footerMid {display: flex; height:auto; padding-bottom:30px;}
+			#footerLogo {width: 60%;}
+			#fulLeft {display:flex; flex-direction:column; flex:1;}
+			#fulCenter {margin-left:0; width: 100%; padding: 12px;}
+			#fulRight {display:flex; flex-direction:column; align-items:center; flex:1;}
+			.fulRight {width: 50%; padding:0 20px;}
+			.fulRight .none {display: none;}
+			.fulRight:first-child {margin-left: 0;}
+			footer .footerEnd {height: auto;}
+			.footerEnd span {left: 40%;}		 
+}
+
+
+/* WİNTER PAGE WİNTER PAGE WİNTER PAGE WİNTER PAGE */
+
+#mainWinter {background: url("../pictures/winter/snow-tree.jpg") top center no-repeat; background-size: 100%; background-attachment: fixed;}
+.winter2 {background: url("../pictures/winter/winter-night.jpg") center no-repeat !important;}
+
+#winterSlide {background:lightgray; display:flex; justify-content:space-evenly; align-items:center; padding:40px;}
+#winterSlide .slider {flex:1;}
+#smallImages .image {width: 50px; height: 50px; float:;}
+#bigImage {width: 250px; height: 250px;}
+#winterSlide .text {flex:1; padding: 20px;}
+#winterSlide .text h2 {font-weight: 400}
+#winterSlide .text p {
+      font-size: 18px;
+				font-weight: 300;
+				line-height: 25px;}
+
+#catAnimation {background: #fafafa; padding: 20px;}
+#cat {
+     width: 300px;
+     height: 300px;
+			animation:cat 10s linear infinite;
+			
+}
+@keyframes cat {
+			0% {transform: translateX(-70%)}
+			50% {transform: translateX(70%)}
+			100% {transform: translateX(-70%)}
+}			
+
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+			#mainWinter {background-size: auto;}
+			
+			@keyframes cat {
+			0% {transform: translateX(-50%)}
+			50% {transform: translateX(50%)}
+			100% {transform: translateX(-50%)}
+}			
+}
+
+
+#mainSpring {background: url("../pictures/spring/spring.jpg") top center no-repeat; background-size: cover; background-attachment: fixed;}
+
+#mainSummer {background: url("../pictures/summer/summer.jpg") top center no-repeat; background-size: cover; background-attachment: fixed;}
+.summer2 {background: url("../pictures/night.jpg") top center no-repeat !important;}
+
+#mainMountain {background: url("../pictures/mountain/mountains.jpg") top center no-repeat; background-size: cover; background-attachment: fixed;}
+
+#mainForest {background: url("../pictures/forest/forest.jpg") top center no-repeat; background-size: cover; background-attachment: fixed;}
+
