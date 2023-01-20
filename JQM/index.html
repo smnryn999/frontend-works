@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sayfa başlığı</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
+    <style>
+        #navbar .ui-btn-active, #navbar .active {background-color:coral; color:white; text-shadow:none;}
+        #iconx {background-color: rgba(0,0,0,0.1)}        
+        #h1 {margin-left: 70px}
+        #main ul li a {border: none;}
+        #main ul li a img {margin-left: 10px;}
+        #navbar ul li a {background-color:wheat; border:1px solid lightgrey;}
+        #rateus a i {color: gold;}
+        #panel ul>a, #close {background-color:bisque; color:black; text-shadow:none;}
+        a, h6, p, li {text-shadow:none !important; box-shadow:none !important;}
+        
+    </style>
+</head>
+<body>
+    <div id="homepage" data-role="page">
+        
+        <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="#panel" class="ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Tutorials</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i class="fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>           
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>                      
+        </div>
+        <div id="navbar" data-role="navbar">
+                 <ul>
+                    <li><a href="#homepage" class="ui-btn-active active ui-btn-icon-left ui-icon-edit">Tutorials</a></li>
+                    <li><a href="#bookmark" data-transition="none" class="ui-btn-icon-left ui-icon-back">Bookmark</a></li>
+                    <li><a href="#rateus" data-transition="none" class="ui-btn-icon-left ui-icon-star">Rate Us</a></li>
+                 </ul>
+           </div>
+        
+        <div data-role="main" id="main" class="bg-light">         
+           <ul data-role="listview" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search" data-icon="false">
+              <li><a href="#overview" class="bg-light py-4" data-transition="slide"><img src="pictures/notebook.jpg" class="mt-1">Overview</a></li>
+              <li><a href="#salesforce" class="bg-light py-4" data-transition="slide"><img src="pictures/notebook.jpg" class="mt-1">Salesforce</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor Sit Amet</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor Sit Amet</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor Sit Amet</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum</a></li>
+              <li><a href="" class="bg-light py-4"><img src="pictures/notebook.jpg" class="mt-1">Lorem Ipsum Dolor Sit Amet</a></li>
+           </ul>          
+        </div>
+        
+        <div data-role="footer" data-theme="b"><h4>Copyright &copy 2022</h4></div>
+      
+        <div id="panel" data-role="panel" data-display="overlay">
+           <ul data-role="listview">
+              <img src="pictures/notebook.png" class="w-100">
+              <li><a href="#panel" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-edit border-0"> Tutorials</a></li>
+              <li><a href="" class="ui-btn ui-icon-star ui-btn-icon-left border-0"> Rate Us</a></li>
+              <li><a href="#privacy" class="ui-btn ui-btn-icon-left ui-icon-alert border-0" data-transition="slide"> Privacy & Policy</a></li>
+              <li><a href="#aboutpage" class="ui-btn ui-icon-info ui-btn-icon-left border-bottom-0" data-transition="slide"> About Us</a></li>
+              <a href="#panel" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-delete ui-corner-all ui-alt-icon ui-nodisc-icon float-right mt-3">Close</a>
+           </ul>
+        </div>
+    </div>      
+    
+    <!-- BOOKMARK PAGE -->
+    <div id="bookmark" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="#panel2" class="ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Tutorials</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i class="fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>                        
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>
+       </div>
+       <div id="navbar" data-role="navbar">
+            <ul>
+               <li><a href="#homepage" data-transition="none">Tutorials</a></li>
+               <li><a href="#bookmark" class="ui-btn-active active">Bookmark</a></li>
+               <li><a href="#rateus" data-transition="none">Rate Us</a></li>
+            </ul>
+       </div>
+       
+       <div data-role="main">          
+          <ul id="history" data-role="listview" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search" data-icon="false"></ul>
+          <button id="clear" class="ui-btn ui-btn-b ui-corner-all mt-3">Clear</button>
+       </div>
+      
+       <div id="panel2" data-role="panel" data-display="overlay">
+           <ul data-role="listview">
+              <img src="pictures/notebook.png" class="w-100">
+              <li><a href="#homepage" class="ui-btn ui-btn-icon-left ui-icon-edit border-0"> Tutorials</a></li>
+              <li><a href="" class="ui-btn ui-icon-star ui-btn-icon-left border-0"> Rate Us</a></li>
+              <li><a href="#privacy" class="ui-btn ui-btn-icon-left ui-icon-alert border-0" data-transition="slide"> Privacy & Policy</a></li>
+              <li><a href="#aboutpage" class="ui-btn ui-icon-info ui-btn-icon-left border-bottom-0" data-transition="slide"> About Us</a></li>
+              <a id="close" href="#panel" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-delete ui-corner-all ui-alt-icon ui-nodisc-icon float-right mt-3">Close</a>
+           </ul>
+       </div>
+    </div>
+    
+    <!-- RATEUS PAGE -->
+    <div id="rateus" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="#panel3" class="ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Tutorials</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i class="fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>                        
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>
+       </div>
+       <div id="navbar" data-role="navbar">
+            <ul>
+               <li><a href="#homepage" data-transition="none">Tutorials</a></li>
+               <li><a href="#bookmark" data-transition="none">Bookmark</a></li>
+               <li><a href="#rateus" class="ui-btn-active active">Rate Us</a></li>
+            </ul>
+       </div>
+       <div data-role="main" class="ui-content">
+          <img src="pictures/giphy.gif" class="w-100">
+          <h5 class="text-center font-weight-bold m-3">Our team has worked hard to make this application. If you are happy with this application please give us your best rate and review.</h5>
+          <a href="#" class="ui-btn ui-btn-b">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+          </a>
+          <img src="pictures/giphy-1.gif" class="w-100 h-50">
+       </div>
+      
+        <div id="panel3" data-role="panel" data-display="overlay">
+           <ul data-role="listview">
+              <img src="pictures/notebook.png" class="w-100">
+              <li><a href="#homepage" class="ui-btn ui-btn-icon-left ui-icon-edit border-0"> Tutorials</a></li>
+              <li><a href="" class="ui-btn ui-icon-star ui-btn-icon-left border-0"> Rate Us</a></li>
+              <li><a href="#privacy" class="ui-btn ui-btn-icon-left ui-icon-alert border-0" data-transition="slide"> Privacy & Policy</a></li>
+              <li><a href="#aboutpage" class="ui-btn ui-icon-info ui-btn-icon-left border-bottom-0" data-transition="slide"> About Us</a></li>
+              <a id="close" href="#panel" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-delete ui-corner-all ui-alt-icon ui-nodisc-icon float-right mt-3">Close</a>
+           </ul>
+        </div>
+    </div>
+    
+    <!-- PRIVACY POLICY PAGE -->
+    <div id="privacy" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2" data-transition="slide" data-direction="reverse"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Privacy & Policy</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i id="rotate" class="fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>                        
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>
+       </div>
+       <div data-role="main">
+          <h2 class="my-3 ml-2">Privacy Policy Lorem Ipsum Dolor Sit Amet Consectetur</h2>
+       <h5 class="my-3 ml-2">Among the types of Personal Data that this Application collects. </h5>
+       <h3 class="my-3 ml-2">Among the types of Personal Data</h3>
+       <h3 class="my-3 ml-2">Lorem Ipsum Dolor Sit Amet</h3>
+       <p class="my-3 ml-2" style="line-height:20px">Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Geographic position, Cookie and Usage Data. Other Personal Data collected may be described in other sections of this privacy policy or by dedicated explanation text contextually with the Data collection. The Personal Data may be freely provided by the User, or collected automatically when using this Application. Any use of Cookies - or of other tracking tools - by this Application or by the owners of third party services used by this Application, unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User. Failure to provide certain Personal Data may make it impossible for this Application to provide its services. The User assumes responsibility for the Personal Data of third parties published or shared through this Application and declares to have the right to communicate or broadcast them, thus relieving the Data Controller of all responsibility.</p>
+       </div>
+    </div>
+    
+    <!-- ABOUT US PAGE -->
+    <div id="aboutpage" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2" data-transition="slide" data-direction="reverse"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">About Us</h1>         
+       </div>
+       <div data-role="main" class="ui-content">
+          <p class="font-weight-bold mb-2">1.0 version</p>
+          <p class="mb-2">Developed by the owners.</p>
+          <p class="text-muted" style="font-size:12px">Lorem ipsum dolor sit amet consectetur.</p><hr/>
+          <p class="text-center mb-1" style="font-size:14px">Copyright &copy 2022</p>
+          <p class="text-center text-muted" style="font-size:12px">Lorem ipsum version 5.3.23/1.0</p>
+       </div>
+    </div>
+    
+    <!-- OVERVİEW PAGE -->
+    <div id="overview" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="#panel4" class="ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Tutorials</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i class="rotate fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>                        
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>
+       </div>
+        <div class="lessonPage" data-role="main">
+           <h6 class="text-center text-light p-2 bg-secondary m-0 position-relative"><a id="iconx" data-rel="back" class="ui-btn ui-icon-arrow-l ui-nodisc-icon ui-btn-icon-notext m-0 d-inline float-left position-absolute" style="top:12%; left:1%"></a>Overview</h6>
+           <div data-role="navbar">
+              <ul>
+                 <li><a style="background-color:lightcoral" class="day text-light">Day Mode</a></li>
+                 <li><a class="dark bg-dark text-light">Dark Mode</a></li>
+              </ul>
+           </div>
+           <div class="border-top border-bottom border-dark m-4 pt-3 d-flex flex-column align-items-center">
+              <p class="h5 font-weight-normal">Salesforce delivers a highly customized experience to the customers, employees, and partners of an organization. Such a platform is used to customize standard functionality and create custom pages, components, apps etc. Also it is done faster, mainly because of the superb architecture on which it is built. Below is a brief introduction to the Salesforce Architecture.</p>
+              <img src="pictures/paper.png" class="w-50 my-3">
+              <h3 class="align-self-start my-1">Lorem Ipsum Dolor</h3>
+              <p class="h5 font-weight-normal my-3">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua is a brief introduction to the sky and review of the superb architecture on which.</p>
+              <ul class="h5 font-weight-normal">
+                 <li><b>Lorem Ipsum Dolor:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                 <li><b>Lorem Ipsum:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                 <li><b>Lorem Ipsum Dolor Sit:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                 <li><b>Lorem Ipsum:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                 <li><b>APIs:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              </ul>
+              <span class="plus btn btn-dark position-fixed" style="left:10px; bottom:10px">+</span>
+            <span class="minus btn btn-dark position-fixed" style="left:50px; bottom:10px">-</span>
+           </div>
+           <button class="bookmark ui-btn ui-btn-inline ui-corner-all ui-btn-b float-right mt-0">bookmark</button>
+        </div>
+        <div id="panel4" data-role="panel" data-display="overlay">
+           <ul data-role="listview">
+              <img src="pictures/notebook.png" class="w-100">
+              <li><a href="#homepage" class="ui-btn ui-btn-icon-left ui-icon-edit border-0"> Tutorials</a></li>
+              <li><a href="" class="ui-btn ui-icon-star ui-btn-icon-left border-0"> Rate Us</a></li>
+              <li><a href="#privacy" class="ui-btn ui-btn-icon-left ui-icon-alert border-0" data-transition="slide"> Privacy & Policy</a></li>
+              <li><a href="#aboutpage" class="ui-btn ui-icon-info ui-btn-icon-left border-bottom-0" data-transition="slide"> About Us</a></li>
+              <a id="close" href="#panel4" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-delete ui-corner-all ui-alt-icon ui-nodisc-icon float-right mt-3">Close</a>
+           </ul>
+        </div>
+    </div>
+    
+    <!-- SALESFORCE PAGE -->
+   <div id="salesforce" data-role="page">
+       <div data-role="header" data-theme="b" class="position-relative">            
+            <a id="iconx" href="#panel5" class="ui-btn ui-btn-icon-left ui-icon-bars ui-nodisc-icon ui-btn-icon-notext mt-1 py-3 ml-2"></a>
+            <h1 id="h1" class="mt-2 d-inline-block py-2">Tutorials</h1>            
+            <i class="fa-solid fa-ellipsis-vertical float-right mr-4 mt-3 py-1"></i>
+            <i class="rotate fas fa-rotate-right float-right mr-4 mt-3 py-1"></i>                        
+            <a href="#aboutpage"class="about float-right bg-secondary position-absolute px-5 py-2 card" style="display:none ;right: 0; top: 17%;" data-transition="slide">About</a>
+       </div>
+       <div class="lessonPage" data-role="main">
+           <h6 class="text-center text-light p-2 bg-secondary m-0 position-relative"><a id="iconx" data-rel="back" class="ui-btn ui-icon-arrow-l ui-nodisc-icon ui-btn-icon-notext m-0 d-inline float-left position-absolute" style="top:12%; left:1%"></a>Salesforce</h6>
+           <div data-role="navbar">
+              <ul>
+                 <li><a style="background-color:lightcoral" class="day text-light">Day Mode</a></li>
+                 <li><a class="dark bg-dark text-light">Dark Mode</a></li>
+              </ul>
+           </div>
+           <div class="border-top border-bottom border-dark m-4 pt-3 d-flex flex-column align-items-center">
+              <p class="h5 font-weight-normal">Salesforce delivers a highly customized experience to the customers, employees, and partners of an organization. Such a platform is used to customize standard functionality and create custom pages, components, apps etc. Also it is done faster, mainly because of the superb architecture on which it is built. Below is a brief introduction to the Salesforce Architecture.</p>
+            <img src="pictures/paper.png" class="w-50 my-3"/>
+            <h3 class="align-self-start my-1">Lorem Ipsum Dolor</h3>
+            <p class="h5 font-weight-normal my-3">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua is a brief introduction to the sky and review of the superb architecture on which.</p>
+            <ul class="h5 font-weight-normal">
+               <li><b>Lorem Ipsum Dolor:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+               <li><b>Lorem Ipsum:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+               <li><b>Lorem Ipsum Dolor Sit:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+               <li><b>Lorem Ipsum:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+               <li><b>APIs:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+            </ul>
+            <span class="plus btn btn-dark position-fixed" style="left:10px; bottom:10px">+</span>
+            <span class="minus btn btn-dark position-fixed" style="left:50px; bottom:10px">—</span>
+          </div>         
+          <button class="bookmark ui-btn ui-btn-inline ui-corner-all ui-btn-b float-right mt-0">bookmark</button>
+       </div>
+       <div id="panel5" data-role="panel" data-display="overlay">
+           <ul data-role="listview">
+              <img src="pictures/notebook.png" class="w-100">
+              <li><a href="#homepage" class="ui-btn ui-btn-icon-left ui-icon-edit border-0"> Tutorials</a></li>
+              <li><a href="" class="ui-btn ui-icon-star ui-btn-icon-left border-0"> Rate Us</a></li>
+              <li><a href="#privacy" class="ui-btn ui-btn-icon-left ui-icon-alert border-0" data-transition="slide"> Privacy & Policy</a></li>
+              <li><a href="#aboutpage" class="ui-btn ui-icon-info ui-btn-icon-left border-bottom-0" data-transition="slide"> About Us</a></li>
+              <a id="close" href="#panel5" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-delete ui-corner-all ui-alt-icon ui-nodisc-icon float-right mt-3">Close</a>
+           </ul>
+        </div>
+   </div>
+
+
+    <script>
+        $(function () {
+            $(window).load(function() {
+               localStorage.setItem("key", $("#history").html());
+               $("#history").html(localStorage.getItem("key"));
+            })
+             
+            $(".fa-ellipsis-vertical").click(function() {$(".about").fadeIn(300);});
+            $("body").click(function (x) {
+                if(!(x.target.matches(".fa-ellipsis-vertical") || x.target.matches(".about"))) {
+                $(".about").fadeOut(300);}
+            });
+            
+            $(".rotate").click(function() {location.href=location.href;});
+            $(".about").click(function () {$(".about").hide();});
+            $(".fa-rotate-right").click(function() {open("index.html", "_self");});            
+            
+            $(".dark").click(function() {$(".lessonPage:parent").css({"background-color":"black", "color":"#fafafa"});});
+            $(".day").click(function() {$(".lessonPage:parent").css({"background-color":"#fafafa", "color":"black"});});
+            
+            
+            $(".bookmark").click(function() {
+               var x = $(this).siblings("h6").text();
+               var y = $("a:contains("+x+")").attr("href");
+               let z = $("#history a").filter("a:contains("+x+")").length;
+               if(z==0) {
+                  $("ul#history").append(`<li><a href="${y}" class="bg-light py-4" data-transition="slide"><img src="pictures/notebook.jpg" class="mt-1"/>${x}</a></li>`).listview("refresh");}
+               else {alert("This is already bookmarked");}                             
+            });           
+            $("#clear").click(function() {$("#history").empty();});
+           
+            
+            var font = $(".plus").siblings("p").css("font-size");
+            font = Number(font.slice(0,2));
+            $(".plus").click(function() {
+               if(font>32) {font = font;}
+               else {font = font + 3;}           
+               $(this).siblings("p,ul").css("font-size",font + "px");                  
+            });
+            $(".minus").click(function() {
+               if(font<16) {font = font;}
+               else {font = font - 3;}                      
+               $(this).siblings("p,ul").css("font-size",font+"px");               
+            })    
+            
+           
+            })
+        
+    </script>    
+    <script src="https://kit.fontawesome.com/861ee2c036.js" crossorigin="anonymous"></script>
+</body>
+</html>
