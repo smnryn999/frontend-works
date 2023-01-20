@@ -1,0 +1,36 @@
+html, body {padding: 0; margin: 0;}
+
+header {height: 60px;}
+#navbar a:not(.a1) {line-height: 50px;}
+.bar1, .bar2, .bar3 {width: 25px; height: 2px; transition: all 0.4s ease;}
+#menu {
+      letter-spacing: -1px;
+      right: 0; top: 63px;
+      width: 0;
+      height: 22em;
+      display: none;
+      transition: all 0.4s ease;}
+
+main section {background: HoneyDew;}
+article #heading {font-family: 'Playfair Display', serif;}
+#h1 {width: 0; height: 1.4em;}
+
+article h1 {letter-spacing: -1px;}
+aside img:first-child {width: 90%; top: -8em;}
+aside img:last-child {width: 90%; top: 4em;}
+
+
+@media(max-width:768px){
+   #menu {top: 58px;}
+}
+
+@media(max-width:992px){
+   #form input {border-radius: 15px 15px 0 0 !important; width: 100%;}
+   #form button {border-radius: 0 0 15px 15px !important; width: 100%; position: relative !important;}
+}
+@media(min-width:992px){
+   #form button {left: 48%; top: 7px; width: 14em; position: absolute;} /* w 14em */
+   #form input {width: 95%;}
+}
+
+
